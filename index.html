@@ -4,14 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
     <title>BUSCADOR GIT</title>
 </head>
 <body>
-    <div id="app">
-        <input type="text" v-model="username">
-        <ol>
+    <div id="app" class="app">
+        <h1>Buscador GIT</h1>
+        <input type="text" v-model="username" class="input">
+        <ul>
             <li v-for="repo in repos">{{repo.name}}</li>
-        </ol>
+        </ul>
     </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.4.2/vue.js"></script>
